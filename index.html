@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="./assets/digital.png" type="image/png">
+  <title>CryptWrite</title>
+  <script defer src="index.js"></script>
+</head>
+
+<body>
+  <header>
+    <img src="./assets/digital.png" alt="logo alura" width="65px">
+    <span class="headerTitle">CryptWrite</span>
+  </header>
+  <main>
+
+    <div class="mainContainer">
+      <section class="inputArea">
+        <textarea name="userInput" id="userInput" cols="150" rows="150" placeholder="Enter your text here !"
+          oninput="handleUserInput()"></textarea>
+        <br>
+        <span class="warning">
+          <img src="./assets/exclaim.png" class="exclaimImg" alt="exclaim">
+          Only lower case letters with no accents or special characters
+        </span>
+        <br>
+        <div class="btnArea">
+          <button class="encBtn btn" onclick="getUserInput()">Encrypt</button>
+          <button class="desencBtn btn" onclick="decriptInput()">Decrypt</button>
+          <button class="clearBtn btn" onclick="clearInput()">Clear Board</button>
+        </div>
+      </section>
+
+
+
+      <section class="errorSection">
+        <img src="./assets/personDT.png" class="personImg" alt="person">
+        <h3>No text yet !</h3>
+        <span>Please enter the text you would like to encrypt or decrypt on the left board</span>
+      </section>
+
+      <section class="outputSection">
+        <div class="outputText">
+
+        </div>
+        <div>
+          <button class="copyBtn btn" onclick="copyToClipboard()">Copy</button>
+        </div>
+      </section>
+
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footerItems">
+      &lt; &nbsp; developed by Tamer Saleh &copy;2023 &nbsp; <a href='https://github.com/tam-sal' target="_blank"
+        rel="noopener noreferrer">
+        <img src='./assets/github4.png' alt="git-hub" width='20px' />
+      </a>
+      &nbsp;&nbsp;
+      <a href="https://www.linkedin.com/in/tamsaleh/" target="_blank" rel="noopener noreferrer">
+        <img src='./assets/linkedin.png' alt="linked" width='20px' /></a>&nbsp; &nbsp;/&gt;
+    </div>
+  </footer>
+
+</body>
+
+</html>
